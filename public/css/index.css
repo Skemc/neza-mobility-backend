@@ -1,0 +1,239 @@
+@import"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    width: 100%;
+    background: white;
+    box-shadow: 2px 1px 6px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    height: inherit;
+    margin-left: 0em;
+    padding-left: 20px;
+    margin-top: 7px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+header ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+header .nav .btn {
+    border: 3px solid #349231;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 25px;
+    border-radius: 30px;
+}
+
+header .menu {
+    display: none;
+}
+
+header .menu:hover {
+    font-weight: 900;
+    transition: 0.5s;
+}
+
+header ul li {
+    float: left;
+}
+
+header ul li a {
+    color: #349231;
+    display: block;
+    padding: 21px;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+header ul li a:hover {
+    color: black;
+    background: #349231;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    height: 60px;
+    background: white;
+    overflow: hidden;
+}
+
+footer p {
+    text-align: left;
+    padding: 20px;
+    margin: 0px;
+    height: 40px;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.footer-privacy {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    height: 60px;
+    background: white;
+    overflow: hidden;
+    box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+}
+
+.footer-privacy p {
+    text-align: left;
+    padding: 20px;
+    margin: 0px;
+    height: 40px;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.footer-privacy .btn {
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+    height: 10px;
+    color: #349231;
+    font-weight: 900;
+    font-size: 15px;
+    float: right;
+    text-decoration: none;
+}
+
+.home {
+    background: url(../assets/maintaince.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 674px;
+}
+
+.footer .btn {
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+    height: 10px;
+    color: #349231;
+    font-weight: 900;
+    font-size: 15px;
+    float: right;
+    text-decoration: none;
+}
+
+.container {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.link {
+    text-decoration: none;
+    color: blue;
+}
+
+#btn-close {
+    color: red;
+    font-size: 35px;
+    margin-bottom: 10px;
+    position: absolute;
+    right: 5px;
+    text-decoration: none;
+}
+
+#side-menu {
+    position: absolute;
+    width: 100%;
+    background: lightgrey;
+    display: none;
+}
+
+
+/* Mobile */
+
+@media(max-width:425px) {
+    html,
+    body {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+    header {
+        position: relative;
+    }
+    header ul {
+        width: 100%;
+        background: lightgrey;
+        max-height: 0px;
+        overflow: hidden;
+        display: block;
+    }
+    header ul li {
+        width: 100%;
+    }
+    header .menu {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-size: 1.9em;
+        color: black;
+    }
+    .side-menu ul li a:hover {
+        font-weight: 900;
+        transition: 0.5s;
+    }
+    .home {
+        background: url(../assets/49.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 643px;
+    }
+}
+
+
+/* Tablet */
+
+@media(max-width:768px) {
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .home {
+        background: url(../assets/49.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 643px;
+    }
+}
+
+
+/* Large Screen */
+
+@media(min-width:2560px) {
+    html,
+    body {
+        width: 70%;
+        margin-left: 200px;
+        padding: 0px;
+        overflow-x: hidden;
+        height: 764px;
+        position: absolute;
+    }
+}
