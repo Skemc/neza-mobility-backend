@@ -8,7 +8,7 @@
     "start": "cross-env NODE_ENV=production npm run build && cross-env NODE_ENV=production node dist/index.js",
     "dev": "node_modules/.bin/nodemon --exec babel-node -- ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run pre-build && babel src -s -d dist --copy-files",
+    "build": "npm run pre-build && node_modules/.bin/babel src -s -d dist --copy-files",
     "pre-build": "rm -rf dist && mkdir dist",
     "docker:prod": "docker-compose -f docker-compose.yml -f docker-compose.prod.yml up",
     "docker:dev": "docker-compose -f docker-compose.yml -f docker-compose.dev.yml up"
