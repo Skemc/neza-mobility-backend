@@ -12,6 +12,7 @@ import routeService from './route.service';
 import companyService from './company.service';
 import driverService from './driver.service';
 import verificationService from './emailVerification.services';
+import walletService from './wallet.service';
 
 export {
   userService,
@@ -27,5 +28,6 @@ export {
   messageService,
   companyService,
   driverService,
+  walletService,
   verificationService
 };

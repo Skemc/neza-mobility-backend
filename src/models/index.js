@@ -8,5 +8,6 @@ import Message from './Message';
 import Route from './Route';
 import Company from './Company';
 import Driver from './Drivers';
+import Wallet from './Wallet';
 
-export { User, Location, Driver, Trip, Company, Notification, Vehicle, Chat, Message, Route };
+export { User, Location, Driver, Trip, Company, Notification, Vehicle, Chat, Message, Wallet, Route };

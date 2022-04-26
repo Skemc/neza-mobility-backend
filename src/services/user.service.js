@@ -19,7 +19,7 @@ const createPassenger= async (userBody) => {
     throw new APIError(409, 'Phone number already used');
   }
 
-  const newUser = { ...userBody, userType: 'passenger' };
+  const newUser = { ...userBody, userType: 'Passenger' };
   const user = await User.create(newUser);
   return user;
 };
